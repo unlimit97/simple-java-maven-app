@@ -9,6 +9,7 @@ trigger:
 pool:
   vmImage: ubuntu-latest
 
+variables:
   DETECT_PROJECT_NAME: $(Build.Repository.Name)
   DETECT_PROJECT_VERSION_NAME: $(Build.SourceBranchName)
   DETECT_CODE_LOCATION_NAME: $(Build.Repository.Name)-$(Build.SourceBranchName)
