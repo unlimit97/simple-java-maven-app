@@ -29,5 +29,5 @@ steps:
 - task: BlackDuckDetectTask@10
   inputs:
     BlackDuckScaService: 'SC_Blackduck'
-    DetectArguments: '--logging.level.detect=DEBUG'
+    DetectArguments: '--detect.excluded.detector.types=GIT --logging.level.detect=DEBUG'
     DetectVersion: 'latest'
