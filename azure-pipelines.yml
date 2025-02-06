@@ -9,6 +9,10 @@ trigger:
 pool:
   vmImage: ubuntu-latest
 
+  DETECT_PROJECT_NAME: $(Build.Repository.Name)
+  DETECT_PROJECT_VERSION_NAME: $(Build.SourceBranchName)
+  DETECT_CODE_LOCATION_NAME: $(Build.Repository.Name)-$(Build.SourceBranchName)
+
 steps:
 - task: Maven@3
   inputs:
